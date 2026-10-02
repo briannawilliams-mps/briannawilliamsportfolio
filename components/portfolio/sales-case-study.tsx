@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { ArrowDown, ArrowLeft, ArrowUpRight, Award, Handshake, Users } from 'lucide-react'
 
 const highlights = [
-  { value: '5+', label: 'Leads converted into consistent customers' },
+  { value: '5+', label: 'Leads converted into consistent business accounts' },
   { value: 'Long-term', label: 'Client relationships strengthened' },
   { value: 'Recognized', label: 'Lead process shared with hotel leaders' },
 ]
@@ -115,7 +115,7 @@ export function SalesCaseStudy() {
             <p className="mt-4 text-sm leading-7 text-[#eadcca]">More than a single introduction, each qualified lead created an opportunity to develop a dependable client relationship and encourage repeat stays.</p>
             <div className="mt-7 border-t border-[#f7f3e8]/20 pt-6">
               <p className="font-serif text-5xl text-[#d8c2a8]">5+</p>
-              <p className="mt-2 text-sm font-medium text-[#f7f3e8]">Leads turned into consistent customers</p>
+              <p className="mt-2 text-sm font-medium text-[#f7f3e8]">Leads converted into consistent business accounts</p>
             </div>
           </div>
           <div className="rounded-[2rem] border border-[#d1c0ab] bg-[#ece2d3] p-7 sm:p-9">
@@ -137,7 +137,7 @@ export function SalesCaseStudy() {
               <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#8f7965]">Long-term impact</p>
               <h2 id="repeat-business-heading" className="mt-2 font-serif text-2xl sm:text-3xl">Stronger relationships. Repeat business.</h2>
               <p className="mt-3 max-w-3xl text-sm leading-7 text-[#655b4f] sm:text-base">
-                In addition, I turned 5+ leads into consistent customers, helping build long term business relationships while increasing revenue and creating repeat business for the hotel.
+                In addition, I turned 5+ leads into consistent business accounts, helping build long-term relationships that increased revenue and created repeat business for the hotel.
               </p>
             </div>
           </div>
