@@ -51,9 +51,9 @@ const optimizations = [
 
 function MetricCard({ value, label }: { value: string; label: string }) {
   return (
-    <div className="rounded-2xl border border-[#ead6d4] bg-white/75 p-5 sm:p-6">
-      <p className="font-serif text-4xl leading-none text-[#292321] sm:text-5xl">{value}</p>
-      <p className="mt-3 text-xs font-semibold uppercase tracking-[0.13em] text-[#706460]">{label}</p>
+    <div className="rounded-2xl border border-[#d1c0ab] bg-[#f7f3e8]/90 p-5 sm:p-6">
+      <p className="font-serif text-4xl leading-none text-[#1f2b1d] sm:text-5xl">{value}</p>
+      <p className="mt-3 text-xs font-semibold uppercase tracking-[0.13em] text-[#655b4f]">{label}</p>
     </div>
   )
 }
@@ -69,21 +69,21 @@ function AudienceBars({
 }) {
   return (
     <div>
-      <h3 className="mb-4 text-xs font-bold uppercase tracking-[0.18em] text-[#655954]">{title}</h3>
+      <h3 className="mb-4 text-xs font-bold uppercase tracking-[0.18em] text-[#655b4f]">{title}</h3>
       <ul className="flex flex-col gap-4">
         {rows.map(({ label, value }) => (
           <li key={label}>
             <div className="mb-1.5 flex items-baseline justify-between gap-3 text-sm">
-              <span className="text-[#413936]">{label}</span>
-              <span className="font-semibold tabular-nums text-[#413936]">{value}%</span>
+              <span className="text-[#655b4f]">{label}</span>
+              <span className="font-semibold tabular-nums text-[#655b4f]">{value}%</span>
             </div>
             <div
-              className="h-2 overflow-hidden rounded-full bg-[#f0e5e2]"
+              className="h-2 overflow-hidden rounded-full bg-[#ece2d3]"
               role="img"
               aria-label={`${label}: ${value}%`}
             >
               <div
-                className="h-full rounded-full bg-[#d85779]"
+                className="h-full rounded-full bg-[#8f7965]"
                 style={{ width: `${Math.max((value / max) * 100, value > 0 ? 2 : 0)}%` }}
               />
             </div>
@@ -96,26 +96,26 @@ function AudienceBars({
 
 export function CovaraCaseStudy() {
   return (
-    <main className="min-h-screen bg-[#fcf8f5] text-[#211d1b]">
-      <header className="border-b border-[#eadfda] bg-[#fcf8f5]">
+    <main className="min-h-screen bg-[#f7f3e8] text-[#1f2b1d]">
+      <header className="border-b border-[#d1c0ab] bg-[#f7f3e8]">
         <nav
           aria-label="Case study navigation"
           className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-5 py-4 sm:px-8"
         >
           <Link
             href="/#case-study"
-            className="font-serif text-2xl italic tracking-tight text-[#292321] sm:text-3xl"
+            className="font-serif text-2xl italic tracking-tight text-[#1f2b1d] sm:text-3xl"
           >
             Brianna Williams
           </Link>
-          <div className="hidden items-center gap-8 text-[0.68rem] font-semibold uppercase tracking-[0.16em] text-[#514844] sm:flex">
-            <a className="transition-colors hover:text-[#d85779]" href="#overview">Overview</a>
-            <a className="transition-colors hover:text-[#d85779]" href="#results">Results</a>
-            <a className="transition-colors hover:text-[#d85779]" href="#insights">Insights</a>
+          <div className="hidden items-center gap-8 text-[0.68rem] font-semibold uppercase tracking-[0.16em] text-[#655b4f] sm:flex">
+            <a className="transition-colors hover:text-[#8f7965]" href="#overview">Overview</a>
+            <a className="transition-colors hover:text-[#8f7965]" href="#results">Results</a>
+            <a className="transition-colors hover:text-[#8f7965]" href="#insights">Insights</a>
           </div>
           <Link
             href="/#case-study"
-            className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.12em] text-[#514844] transition-colors hover:text-[#d85779]"
+            className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.12em] text-[#655b4f] transition-colors hover:text-[#8f7965]"
           >
             <ArrowLeft aria-hidden="true" className="size-4" />
             <span className="hidden sm:inline">Portfolio</span>
@@ -123,7 +123,7 @@ export function CovaraCaseStudy() {
         </nav>
       </header>
 
-      <section id="overview" className="relative isolate overflow-hidden bg-[#332a27]">
+      <section id="overview" className="relative isolate overflow-hidden bg-[#1f2b1d]">
         <div className="absolute inset-0 -z-10">
           <Image
             src={campaignImage}
@@ -133,22 +133,22 @@ export function CovaraCaseStudy() {
             sizes="100vw"
             className="object-cover object-center opacity-50"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#201918]/90 via-[#201918]/60 to-[#201918]/10" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#1f2b1d]/90 via-[#1f2b1d]/60 to-[#1f2b1d]/10" />
         </div>
         <div className="mx-auto grid min-h-[520px] max-w-7xl items-end gap-10 px-5 pb-12 pt-20 sm:px-8 sm:pb-16 md:min-h-[590px] md:grid-cols-[1.1fr_.9fr] md:items-center md:py-20">
           <div className="max-w-2xl text-white">
-            <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#f2b6c5]">Case study · TikTok</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#c99f94]">Case study · TikTok</p>
             <h1 className="mt-5 font-serif text-6xl leading-[0.9] tracking-[-0.045em] sm:text-7xl md:text-8xl">
               Covara
-              <span className="mt-1 block italic text-[#f5c5cf]">Beauty</span>
+              <span className="mt-1 block italic text-[#f7f3e8]">Beauty</span>
             </h1>
-            <div className="mt-7 h-1 w-20 rounded-full bg-[#df6685]" />
+            <div className="mt-7 h-1 w-20 rounded-full bg-[#8f7965]" />
             <p className="mt-6 max-w-xl text-sm font-medium uppercase leading-relaxed tracking-[0.12em] text-white/90 sm:text-base">
               Turning affordable beauty recommendations into TikTok discovery
             </p>
             <div className="mt-8 flex flex-wrap gap-2">
               {['Social media strategy', 'Content marketing', 'TikTok'].map((tag) => (
-                <span key={tag} className="rounded-full bg-[#f6dbe1] px-4 py-2 text-xs font-semibold text-[#563b42]">
+                <span key={tag} className="rounded-full bg-[#ece2d3] px-4 py-2 text-xs font-semibold text-[#1f2b1d]">
                   {tag}
                 </span>
               ))}
@@ -157,8 +157,8 @@ export function CovaraCaseStudy() {
           <div className="hidden md:block">
             <p className="text-right font-serif text-5xl italic leading-none text-white/90 lg:text-6xl">
               Covara
-              <span className="mt-2 block font-sans text-sm not-italic uppercase tracking-[0.48em] text-[#f3c8d1]">Beauty</span>
-              <Heart aria-hidden="true" className="ml-auto mt-5 size-8 text-[#f3c8d1]" />
+              <span className="mt-2 block font-sans text-sm not-italic uppercase tracking-[0.48em] text-[#c99f94]">Beauty</span>
+              <Heart aria-hidden="true" className="ml-auto mt-5 size-8 text-[#c99f94]" />
             </p>
           </div>
           <a
@@ -173,17 +173,17 @@ export function CovaraCaseStudy() {
 
       <section id="challenge" className="mx-auto grid max-w-7xl gap-12 px-5 py-16 sm:px-8 sm:py-20 md:grid-cols-[.85fr_1.15fr] md:gap-20">
         <div>
-          <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#d85779]">01 / The challenge</p>
+          <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#8f7965]">01 / The challenge</p>
           <h2 className="mt-4 font-serif text-4xl leading-tight sm:text-5xl">Make useful beauty content feel like a recommendation.</h2>
-          <p className="mt-6 text-sm leading-7 text-[#615752] sm:text-base">
+          <p className="mt-6 text-sm leading-7 text-[#655b4f] sm:text-base">
             Covara Beauty needed to reach potential consumers beyond its existing audience. Rather than lead with a traditional product advertisement, the campaign used a “cheap items I recommend” format to share affordable, practical nail-care picks.
           </p>
-          <p className="mt-4 text-sm leading-7 text-[#615752] sm:text-base">
+          <p className="mt-4 text-sm leading-7 text-[#655b4f] sm:text-base">
             The idea was to meet people where they already discover beauty: TikTok—and make the content feel accessible, relatable, and genuinely useful.
           </p>
-          <dl className="mt-8 grid grid-cols-2 gap-4 border-t border-[#e8d9d3] pt-6 text-sm">
-            <div><dt className="text-xs uppercase tracking-[0.14em] text-[#8a7971]">Role</dt><dd className="mt-2 font-medium">Social media marketing & content strategy</dd></div>
-            <div><dt className="text-xs uppercase tracking-[0.14em] text-[#8a7971]">Platform</dt><dd className="mt-2 font-medium">TikTok</dd></div>
+          <dl className="mt-8 grid grid-cols-2 gap-4 border-t border-[#d1c0ab] pt-6 text-sm">
+            <div><dt className="text-xs uppercase tracking-[0.14em] text-[#655b4f]">Role</dt><dd className="mt-2 font-medium">Social media marketing & content strategy</dd></div>
+            <div><dt className="text-xs uppercase tracking-[0.14em] text-[#655b4f]">Platform</dt><dd className="mt-2 font-medium">TikTok</dd></div>
           </dl>
         </div>
         <div className="grid grid-cols-2 gap-3 sm:gap-5">
@@ -194,20 +194,20 @@ export function CovaraCaseStudy() {
           <figure className="relative aspect-[4/5] overflow-hidden rounded-2xl sm:rounded-3xl">
             <Image src={nailArtImage} alt="A collection of colorful handmade press-on nail designs arranged in a display case" fill sizes="(min-width: 768px) 30vw, 50vw" className="object-cover" />
           </figure>
-          <div className="flex flex-col justify-center rounded-2xl bg-[#f5e8e5] p-5 sm:rounded-3xl sm:p-8">
-            <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#d85779]">The creative idea</p>
+          <div className="flex flex-col justify-center rounded-2xl bg-[#ece2d3] p-5 sm:rounded-3xl sm:p-8">
+            <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#8f7965]">The creative idea</p>
             <p className="mt-4 font-serif text-2xl italic leading-snug sm:text-3xl">“Cheap items I recommend from the dollar store that I use on my nails.”</p>
-            <p className="mt-4 text-sm leading-6 text-[#675a55]">A specific, value-first hook made affordable nail essentials the starting point for discovery.</p>
+            <p className="mt-4 text-sm leading-6 text-[#655b4f]">A specific, value-first hook made affordable nail essentials the starting point for discovery.</p>
           </div>
         </div>
       </section>
 
-      <section className="bg-[#f5eae7] px-5 py-16 sm:px-8 sm:py-20">
+      <section className="bg-[#ece2d3] px-5 py-16 sm:px-8 sm:py-20">
         <div className="mx-auto grid max-w-7xl gap-12 md:grid-cols-2 md:gap-20">
           <div>
-            <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#d85779]">02 / The strategy</p>
+            <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#8f7965]">02 / The strategy</p>
             <h2 className="mt-4 font-serif text-4xl leading-tight sm:text-5xl">Value first. Relatable always. Built for discovery.</h2>
-            <p className="mt-6 text-sm leading-7 text-[#615752] sm:text-base">
+            <p className="mt-6 text-sm leading-7 text-[#655b4f] sm:text-base">
               Through research into effective TikTok content, I identified carousel posts as a strong format for sharing useful information. I developed an educational carousel with practical tips for aspiring nail technicians and people who enjoy doing their own nails.
             </p>
           </div>
@@ -218,8 +218,8 @@ export function CovaraCaseStudy() {
               ['03', 'Expand the audience', 'Prioritize non-followers and new viewers to introduce Covara to future customers.'],
             ].map(([number, title, text]) => (
               <li key={number} className="flex gap-4">
-                <span className="flex size-11 shrink-0 items-center justify-center rounded-full bg-[#df6685] text-sm font-bold text-white">{number}</span>
-                <div><h3 className="font-semibold text-[#312a27]">{title}</h3><p className="mt-1 text-sm leading-6 text-[#70625d]">{text}</p></div>
+                <span className="flex size-11 shrink-0 items-center justify-center rounded-full bg-[#8f7965] text-sm font-bold text-white">{number}</span>
+                <div><h3 className="font-semibold text-[#1f2b1d]">{title}</h3><p className="mt-1 text-sm leading-6 text-[#655b4f]">{text}</p></div>
               </li>
             ))}
           </ol>
@@ -229,41 +229,41 @@ export function CovaraCaseStudy() {
       <section id="results" className="mx-auto max-w-7xl scroll-mt-8 px-5 py-16 sm:px-8 sm:py-20">
         <div className="mb-8 flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
           <div>
-            <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#d85779]">03 / The results</p>
+            <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#8f7965]">03 / The results</p>
             <h2 className="mt-3 font-serif text-4xl sm:text-5xl">A new audience found the content.</h2>
           </div>
-          <p className="max-w-md text-sm leading-6 text-[#70625d]">The campaign reached far beyond the existing follower base, showing the discovery potential of value-led beauty content.</p>
+          <p className="max-w-md text-sm leading-6 text-[#655b4f]">The campaign reached far beyond the existing follower base, showing the discovery potential of value-led beauty content.</p>
         </div>
         <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
           {results.map((metric) => <MetricCard key={metric.label} {...metric} />)}
         </div>
-        <div className="mt-8 grid gap-8 rounded-3xl border border-[#ead6d4] bg-white/75 p-6 sm:p-9 md:grid-cols-3">
+        <div className="mt-8 grid gap-8 rounded-3xl border border-[#d1c0ab] bg-[#f7f3e8]/90 p-6 sm:p-9 md:grid-cols-3">
           <AudienceBars title="Gender" rows={gender} />
           <AudienceBars title="Age" rows={age} />
           <AudienceBars title="Top locations" rows={locations} />
         </div>
-        <p className="mt-5 text-xs leading-5 text-[#81736e]">Audience percentages are based on the TikTok analytics provided for this campaign. Rounded location shares total 100%.</p>
-        <figure className="mt-9 overflow-hidden rounded-3xl border border-[#ead6d4] bg-[#66584b]">
+        <p className="mt-5 text-xs leading-5 text-[#655b4f]">Audience percentages are based on the TikTok analytics provided for this campaign. Rounded location shares total 100%.</p>
+        <figure className="mt-9 overflow-hidden rounded-3xl border border-[#d1c0ab] bg-[#8f7965]">
           <Image src={resultsImage} alt="Campaign results graphic showing 70K post views, 57.2K viewers, 144 new followers, 95% new viewers, and 100% non-followers" width={1230} height={695} sizes="(min-width: 1280px) 1152px, 100vw" className="h-auto w-full" />
           <figcaption className="px-5 py-3 text-xs text-white/80 sm:px-7">Original campaign results visual.</figcaption>
         </figure>
       </section>
 
-      <section id="insights" className="scroll-mt-8 bg-[#211d1b] px-5 py-16 text-white sm:px-8 sm:py-20">
+      <section id="insights" className="scroll-mt-8 bg-[#1f2b1d] px-5 py-16 text-white sm:px-8 sm:py-20">
         <div className="mx-auto grid max-w-7xl gap-10 md:grid-cols-[.85fr_1.15fr] md:gap-20">
           <div>
-            <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#f2a6b9]">04 / What the data revealed</p>
+            <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#c99f94]">04 / What the data revealed</p>
             <h2 className="mt-4 font-serif text-4xl leading-tight sm:text-5xl">Reach gets attention. Retention creates opportunity.</h2>
             <p className="mt-6 text-sm leading-7 text-white/75 sm:text-base">
               The post had seven photos available, but viewers saw four on average. Most left after the second photo. Strong reach brought new people in; the next opportunity is to keep them swiping and bring the product value forward sooner.
             </p>
           </div>
           <div className="rounded-3xl bg-white/[0.07] p-6 sm:p-9">
-            <h3 className="text-xs font-bold uppercase tracking-[0.18em] text-[#f2a6b9]">Next-step optimization</h3>
+            <h3 className="text-xs font-bold uppercase tracking-[0.18em] text-[#c99f94]">Next-step optimization</h3>
             <ul className="mt-6 flex flex-col gap-4">
               {optimizations.map((optimization) => (
                 <li key={optimization} className="flex gap-3 text-sm leading-6 text-white/85">
-                  <span aria-hidden="true" className="mt-2 size-1.5 shrink-0 rounded-full bg-[#f2a6b9]" />
+                  <span aria-hidden="true" className="mt-2 size-1.5 shrink-0 rounded-full bg-[#c99f94]" />
                   {optimization}
                 </li>
               ))}
@@ -274,24 +274,24 @@ export function CovaraCaseStudy() {
 
       <section className="mx-auto max-w-7xl px-5 py-16 sm:px-8 sm:py-20">
         <div className="mx-auto max-w-3xl text-center">
-          <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#d85779]">The bigger picture</p>
+          <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#8f7965]">The bigger picture</p>
           <h2 className="mt-4 font-serif text-4xl leading-tight sm:text-5xl">A content result—and a business opportunity.</h2>
-          <p className="mt-6 text-sm leading-7 text-[#615752] sm:text-base">
+          <p className="mt-6 text-sm leading-7 text-[#655b4f] sm:text-base">
             The campaign introduced Covara Beauty to a predominantly female audience, with 81% of viewers aged 18–34. The work helped increase visibility, attract new customers, and contribute to business revenue. Most importantly, the analytics turned a successful reach moment into clear next steps for stronger retention and future content.
           </p>
-          <p className="mt-8 font-serif text-3xl italic text-[#d85779]">“Reach gets attention. Retention creates opportunity.”</p>
-          <Link href="/#case-study" className="mt-9 inline-flex items-center gap-2 rounded-full bg-[#292321] px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-[#d85779] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#d85779] focus-visible:ring-offset-2">
+          <p className="mt-8 font-serif text-3xl italic text-[#8f7965]">“Reach gets attention. Retention creates opportunity.”</p>
+          <Link href="/#case-study" className="mt-9 inline-flex items-center gap-2 rounded-full bg-[#1f2b1d] px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-[#8f7965] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8f7965] focus-visible:ring-offset-2">
             Back to portfolio
             <ArrowUpRight aria-hidden="true" className="size-4" />
           </Link>
         </div>
       </section>
 
-      <footer className="bg-[#171413] px-5 py-6 text-white sm:px-8">
+      <footer className="bg-[#172016] px-5 py-6 text-white sm:px-8">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 sm:flex-row">
           <p className="font-serif text-xl italic">Brianna Williams</p>
           <p className="text-[0.62rem] font-medium uppercase tracking-[0.19em] text-white/60">Marketing · Communications · Creative strategy</p>
-          <a href="/#contact" className="font-serif text-lg italic text-[#f2b6c5]">Let&apos;s build what&apos;s next</a>
+          <a href="/#contact" className="font-serif text-lg italic text-[#c99f94]">Let&apos;s build what&apos;s next</a>
         </div>
       </footer>
     </main>
