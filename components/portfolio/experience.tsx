@@ -1,3 +1,5 @@
+import Link from 'next/link'
+import { ArrowUpRight } from 'lucide-react'
 import { experience } from '@/lib/portfolio'
 import { SectionHeading } from './section-heading'
 
@@ -27,6 +29,13 @@ export function Experience() {
           </li>
         ))}
       </ol>
+      <Link
+        href="/case-studies/sales-support"
+        className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-primary transition-colors hover:text-mocha"
+      >
+        Read the lead generation case study
+        <ArrowUpRight aria-hidden="true" className="size-4" />
+      </Link>
     </section>
   )
 }

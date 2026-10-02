@@ -16,12 +16,18 @@ export function About() {
             <span className="flex size-10 items-center justify-center rounded-full bg-secondary text-primary">
               <GraduationCap className="size-5" aria-hidden="true" />
             </span>
-            <div>
-              <h3 className="font-serif text-xl font-medium leading-tight">{education.degree}</h3>
-              <p className="text-sm text-muted-foreground">
-                {education.school} &middot; {education.year}
-              </p>
-            </div>
+            <ul className="space-y-4">
+              {education.degrees.map((degree) => (
+                <li key={degree.degree}>
+                  <h3 className="font-serif text-lg font-medium leading-tight">{degree.degree}</h3>
+                  {degree.school && degree.year && (
+                    <p className="text-sm text-muted-foreground">
+                      {degree.school} &middot; {degree.year}
+                    </p>
+                  )}
+                </li>
+              ))}
+            </ul>
           </div>
           <ul className="mt-5 flex flex-wrap gap-2" aria-label="Areas of focus">
             {education.focus.map((item) => (
