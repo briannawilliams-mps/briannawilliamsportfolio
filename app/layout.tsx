@@ -16,9 +16,9 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: '[Your Name] | Public Relations & Hospitality Sales',
+  title: 'Brianna Williams | Marketing, Public Relations & Sales Support',
   description:
-    'Personal portfolio of [Your Name] — PR graduate specializing in hospitality lead generation, sales support, and beauty brand marketing.',
+    'Brianna Williams is a marketing and public relations professional focused on sales support, lead generation, and hospitality business development.',
   generator: 'v0.app',
   icons: {
     icon: [
