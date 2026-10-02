@@ -1,9 +1,8 @@
 export const profile = {
-  name: '[Your Name]',
-  initials: 'YN',
-  title: 'Public Relations & Hospitality Sales',
-  tagline:
-    'I connect brands with the people they’re meant to serve — through thoughtful storytelling, strategic outreach, and relationships built to last.',
+  name: 'Brianna Williams',
+  initials: 'BW',
+  title: 'Marketing / Public Relations / Sales Support',
+  tagline: 'Turning Connections Into Opportunities and Opportunities Into Revenue',
   location: 'Your City, State',
   email: 'hello@yourname.com',
   phone: '(555) 123-4567',
@@ -15,7 +14,7 @@ export const profile = {
 
 export const about = {
   intro:
-    'With a Bachelor’s degree in Public Relations and hands-on experience in hospitality sales, I bring a communicator’s eye to every stage of the client journey — from the first outreach email to the final signed proposal.',
+    'I have a Bachelor’s degree in Public Relations and an associate degree in Marketing. I have also built hands-on experience in the hospitality industry as a Front Desk Agent, where I have developed strong skills in customer relations, sales support, lead generation, and business development. In my current role, I identify opportunities to generate leads and connect potential business with our sales team. I have worked to build relationships with many aerospace companies and encourage extended stays at our hotel through referral programs and targeted incentives. These efforts have given me experience understanding business needs, developing relationships, and identifying opportunities that can contribute to hotel revenue. My combination of communication, marketing, and hospitality experience has allowed me to develop a customer-focused approach while also gaining insight into sales and revenue strategies.',
   education: {
     degree: 'Bachelor of Arts, Public Relations',
     school: 'Your University',
