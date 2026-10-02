@@ -1,4 +1,6 @@
 import Image from 'next/image'
+import Link from 'next/link'
+import { ArrowUpRight } from 'lucide-react'
 import { caseStudy } from '@/lib/portfolio'
 import { SectionHeading } from './section-heading'
 
@@ -14,34 +16,31 @@ export function CaseStudy() {
         <div className="grid md:grid-cols-2">
           <div className="relative aspect-[4/3] md:aspect-auto">
             <Image
-              src={caseStudy.image || '/placeholder.svg'}
+              src={caseStudy.image}
               alt={caseStudy.imageAlt}
               fill
               sizes="(min-width: 768px) 50vw, 100vw"
               className="object-cover"
             />
           </div>
-          <div className="flex flex-col gap-6 p-6 sm:p-10">
+          <div className="flex flex-col items-start gap-6 p-6 sm:p-10">
             <p className="text-pretty font-serif text-xl italic leading-relaxed text-foreground">
               {caseStudy.summary}
             </p>
-            <dl className="flex flex-col gap-5">
-              {caseStudy.sections.map((section) => (
-                <div key={section.heading} className="border-l-2 border-tan pl-4">
-                  <dt className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">
-                    {section.heading}
-                  </dt>
-                  <dd className="mt-1 text-sm leading-relaxed text-muted-foreground">
-                    {section.body}
-                  </dd>
-                </div>
-              ))}
-            </dl>
+            <p className="text-sm leading-relaxed text-muted-foreground">
+              {caseStudy.sections[0].body}
+            </p>
+            <Link
+              href="/case-studies/covara"
+              className="inline-flex items-center gap-2 rounded-full bg-primary px-5 py-3 text-sm font-medium text-primary-foreground transition-colors hover:bg-espresso focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+            >
+              Explore the case study
+              <ArrowUpRight aria-hidden="true" className="size-4" />
+            </Link>
           </div>
         </div>
         <div className="border-t border-border bg-secondary/60 px-6 py-5 sm:px-10">
-          <h3 className="sr-only">Deliverables</h3>
-          <ul className="flex flex-wrap items-center gap-2" aria-label="Deliverables">
+          <ul className="flex flex-wrap items-center gap-2" aria-label="Campaign highlights">
             {caseStudy.deliverables.map((item) => (
               <li
                 key={item}

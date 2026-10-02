@@ -39,26 +39,27 @@ export const experience = [
 
 export const caseStudy = {
   client: 'Covara Beauty',
-  label: 'Marketing Case Study',
-  image: '/images/covara-beauty.png',
-  imageAlt: 'Amber glass skincare bottles and cream jars arranged on travertine stone',
+  label: 'TikTok Content Strategy / Audience Growth',
+  image:
+    'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/4034ADD5-1B28-4330-880C-AA74DB854037-uelA5PvqXalFJ4qKU2PtlG5JySSLs7.jpg',
+  imageAlt: 'Colorful nail tools and affordable beauty products arranged in a pink organizer',
   summary:
-    'A brand awareness and launch strategy for Covara Beauty, positioning the line as an accessible, ingredient-conscious choice for the modern skincare customer.',
+    'Turning affordable nail-care recommendations into a discovery-first TikTok campaign for Covara Beauty.',
   sections: [
     {
       heading: 'The Challenge',
-      body: 'Covara Beauty needed to stand out in a crowded clean-beauty market and build recognition with a younger audience that values authenticity over polish.',
+      body: 'Covara Beauty needed to reach potential consumers beyond its existing audience. The campaign needed to feel useful, affordable, and relatable—not like a traditional product advertisement.',
     },
     {
-      heading: 'My Approach',
-      body: 'I developed audience personas, a cohesive brand voice, and a multi-channel plan spanning social content, micro-influencer partnerships, and earned media pitches.',
+      heading: 'The Strategy',
+      body: 'Meet consumers where they already are: TikTok. Research into platform content informed an educational carousel with practical recommendations for aspiring nail technicians and people who do their own nails.',
     },
     {
       heading: 'The Outcome',
-      body: 'The final campaign delivered a ready-to-launch content calendar, press kit, and influencer brief — a complete roadmap from awareness to conversion.',
+      body: 'The post reached 70K views and 57.2K viewers, adding 144 followers. 95% of viewers were new to the account, while all viewers were non-followers—strong discovery potential for the brand.',
     },
   ],
-  deliverables: ['Brand Voice Guide', 'Social Content Calendar', 'Press Kit', 'Influencer Brief'],
+  deliverables: ['TikTok Content Strategy', 'Educational Carousel', 'Audience Growth', 'Performance Analysis'],
 }
 
 export const skills = [
