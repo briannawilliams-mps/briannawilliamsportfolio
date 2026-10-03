@@ -3,7 +3,7 @@ import { SectionHeading } from './section-heading'
 
 export function Skills() {
   return (
-    <section aria-labelledby="skills-title" className="mx-auto max-w-3xl px-5">
+    <section id="skills" aria-labelledby="skills-title" className="mx-auto max-w-3xl px-5">
       <SectionHeading eyebrow="Strengths" title="What I bring" id="skills-title" />
       <ul className="flex flex-wrap justify-center gap-3">
         {skills.map((skill) => (

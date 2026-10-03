@@ -14,19 +14,24 @@ export function CaseStudy() {
       <SectionHeading eyebrow={caseStudy.label} title={caseStudy.client} id="case-study-title" />
       <article className="overflow-hidden rounded-3xl border border-border bg-card/90 shadow-lg shadow-mocha/10">
         <div className="grid md:grid-cols-2">
-          <div className="relative aspect-[4/3] md:aspect-auto">
+          <div className="relative aspect-[4/3] overflow-hidden bg-black md:aspect-auto">
             <Image
-              src={caseStudy.image}
-              alt={caseStudy.imageAlt}
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_7064-1VLxVsQssFXsSCO6E0t2XTeZ1Z5YTD.jpg"
+              alt="Covara Beauty logo: rose-gold crowned CB monogram and Covara Beauty wordmark on a black background"
               fill
+              unoptimized
               sizes="(min-width: 768px) 50vw, 100vw"
-              className="object-cover"
+              className="object-contain object-center"
             />
           </div>
           <div className="flex flex-col items-start gap-6 p-6 sm:p-10">
-            <p className="text-pretty font-serif text-xl italic leading-relaxed text-foreground">
-              {caseStudy.summary}
-            </p>
+
+            <div>
+              <p className="text-xs font-bold uppercase tracking-[0.16em] text-muted-foreground">Case study summary</p>
+              <p className="mt-2 text-pretty font-serif text-xl italic leading-relaxed text-foreground">
+                {caseStudy.summary}
+              </p>
+            </div>
             <p className="text-sm leading-relaxed text-muted-foreground">
               {caseStudy.sections[0].body}
             </p>

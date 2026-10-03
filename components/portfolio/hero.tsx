@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { profile } from '@/lib/portfolio'
 
 const portraitUrl =
@@ -5,7 +6,20 @@ const portraitUrl =
 
 export function Hero() {
   return (
-    <header className="relative isolate overflow-hidden bg-gradient-to-r from-[#1f2b1d] via-[#827653] to-[#f0dba9]">
+    <header id="home" className="relative isolate overflow-hidden bg-gradient-to-r from-[#1f2b1d] via-[#827653] to-[#f0dba9]">
+      <nav aria-label="Main navigation" className="relative z-20 bg-[#1f2b1d] px-5 py-4 text-[#f7f3e8] sm:px-8">
+        <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-x-6 gap-y-3">
+          <Link href="/" className="font-serif text-xl italic sm:text-2xl">Brianna Williams</Link>
+          <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-[0.62rem] font-semibold uppercase tracking-[0.14em] sm:gap-x-6 sm:text-xs">
+            <a href="#about" className="transition-colors hover:text-[#e4b8a8]">About</a>
+            <a href="#case-study" className="transition-colors hover:text-[#e4b8a8]">Case Study</a>
+            <a href="#skills" className="transition-colors hover:text-[#e4b8a8]">What I Bring</a>
+            <a href="#contact" className="transition-colors hover:text-[#e4b8a8]">Contact</a>
+            <a href={profile.linkedin} target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-[#e4b8a8]">LinkedIn</a>
+            <Link href="/resume" className="transition-colors hover:text-[#e4b8a8]">Resume</Link>
+          </div>
+        </div>
+      </nav>
       <div className="relative grid md:min-h-[500px] md:grid-cols-[1.2fr_.8fr]">
         <div className="relative z-10 flex flex-col items-center justify-center bg-gradient-to-r from-[#1f2b1d] via-[#61583c] to-[#827653] px-6 py-14 text-center sm:px-10 md:bg-none md:px-8 lg:px-14">
           <p className="w-full max-w-[22rem] text-balance text-xs font-semibold leading-relaxed tracking-[0.12em] text-[#e4b8a8] sm:max-w-none sm:text-sm">

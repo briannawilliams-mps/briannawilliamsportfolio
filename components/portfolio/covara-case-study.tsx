@@ -4,8 +4,6 @@ import { ArrowDown, ArrowLeft, ArrowUpRight, Heart } from 'lucide-react'
 
 const campaignImage =
   'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/4034ADD5-1B28-4330-880C-AA74DB854037-uelA5PvqXalFJ4qKU2PtlG5JySSLs7.jpg'
-const resultsImage =
-  'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_7053.PNG-w4gHjiWegMFvyZDURxTUozucI20zhq.png'
 const manicureImage =
   'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/214A5DCA-F43B-43EB-8DF6-65FE7EE26B6D.JPG-bxPXtqYk80vZU9y42krgpr3Sc0dQUM.jpeg'
 const nailArtImage =
@@ -144,7 +142,7 @@ export function CovaraCaseStudy() {
             </h1>
             <div className="mt-7 h-1 w-20 rounded-full bg-[#8f7965]" />
             <p className="mt-6 max-w-xl text-sm font-medium uppercase leading-relaxed tracking-[0.12em] text-white/90 sm:text-base">
-              Turning affordable beauty recommendations into TikTok discovery
+              Turning affordable nail-care recommendations into a discovery-first TikTok campaign for Covara Beauty.
             </p>
             <div className="mt-8 flex flex-wrap gap-2">
               {['Social media strategy', 'Content marketing', 'TikTok'].map((tag) => (
@@ -153,6 +151,14 @@ export function CovaraCaseStudy() {
                 </span>
               ))}
             </div>
+            <a
+              href="https://www.tiktok.com/@covara.beauty/photo/7662882039724543245?_r=1&_t=ZP-9AEFZ40pZpG"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-8 inline-flex items-center gap-2 rounded-full bg-[#f7f3e8] px-5 py-3 text-sm font-semibold text-[#1f2b1d] transition-colors hover:bg-white"
+            >
+              Covara Case Study Video <ArrowUpRight aria-hidden="true" className="size-4" />
+            </a>
           </div>
           <div className="hidden md:block">
             <p className="text-right font-serif text-5xl italic leading-none text-white/90 lg:text-6xl">
@@ -243,10 +249,6 @@ export function CovaraCaseStudy() {
           <AudienceBars title="Top locations" rows={locations} />
         </div>
         <p className="mt-5 text-xs leading-5 text-[#655b4f]">Audience percentages are based on the TikTok analytics provided for this campaign. Rounded location shares total 100%.</p>
-        <figure className="mt-9 overflow-hidden rounded-3xl border border-[#d1c0ab] bg-[#8f7965]">
-          <Image src={resultsImage} alt="Campaign results graphic showing 70K post views, 57.2K viewers, 144 new followers, 95% new viewers, and 100% non-followers" width={1230} height={695} sizes="(min-width: 1280px) 1152px, 100vw" className="h-auto w-full" />
-          <figcaption className="px-5 py-3 text-xs text-white/80 sm:px-7">Original campaign results visual.</figcaption>
-        </figure>
       </section>
 
       <section id="insights" className="scroll-mt-8 bg-[#1f2b1d] px-5 py-16 text-white sm:px-8 sm:py-20">
