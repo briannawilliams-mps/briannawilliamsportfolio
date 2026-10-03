@@ -151,6 +151,14 @@ export function CovaraCaseStudy() {
                 </span>
               ))}
             </div>
+            <a
+              href="https://www.tiktok.com/@covara.beauty/photo/7662882039724543245?_r=1&_t=ZP-9AEFZ40pZpG"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-8 inline-flex items-center gap-2 rounded-full bg-[#f7f3e8] px-5 py-3 text-sm font-semibold text-[#1f2b1d] transition-colors hover:bg-white"
+            >
+              Covara Case Study Video <ArrowUpRight aria-hidden="true" className="size-4" />
+            </a>
           </div>
           <div className="hidden md:block">
             <p className="text-right font-serif text-5xl italic leading-none text-white/90 lg:text-6xl">
