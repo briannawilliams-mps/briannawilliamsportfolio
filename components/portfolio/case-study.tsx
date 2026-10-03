@@ -20,7 +20,7 @@ export function CaseStudy() {
               alt={caseStudy.imageAlt}
               fill
               sizes="(min-width: 768px) 50vw, 100vw"
-              className="scale-[1.6] object-cover object-[center_58%]"
+              className="scale-[2.6] origin-left object-cover object-[0%_58%]"
             />
           </div>
           <div className="flex flex-col items-start gap-6 p-6 sm:p-10">
