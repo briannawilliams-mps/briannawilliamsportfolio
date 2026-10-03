@@ -9,7 +9,8 @@ const links = [
 
 export function Contact() {
   return (
-    <section aria-labelledby="contact-title" className="mx-auto max-w-4xl px-5 pb-16">
+      <section id="contact" aria-labelledby="contact-title" className="mx-auto max-w-4xl px-5 pb-16">
+
       <SectionHeading eyebrow="Contact" title="Let’s work together" id="contact-title" light />
       <ul className="grid gap-4 sm:grid-cols-2">
         {links.map(({ label, value, href, icon: Icon, external }) => (

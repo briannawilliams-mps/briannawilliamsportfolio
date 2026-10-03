@@ -5,7 +5,7 @@ import { SectionHeading } from './section-heading'
 export function About() {
   const { education } = about
   return (
-    <section aria-labelledby="about-title" className="mx-auto max-w-4xl px-5">
+    <section id="about" aria-labelledby="about-title" className="mx-auto max-w-4xl px-5">
       <SectionHeading eyebrow="About" title="A communicator at heart" id="about-title" />
       <div className="grid gap-6 md:grid-cols-5">
         <p className="text-pretty text-lg leading-relaxed text-muted-foreground md:col-span-3">
@@ -28,6 +28,12 @@ export function About() {
                 </li>
               ))}
             </ul>
+          </div>
+          <div className="mt-5 border-t border-border pt-5">
+            <h3 className="font-serif text-lg font-medium">PRSSA leadership</h3>
+            <p className="mt-1 text-sm text-muted-foreground">
+              {education.leadership.role}, {education.leadership.organization} · {education.leadership.period}
+            </p>
           </div>
           <ul className="mt-5 flex flex-wrap gap-2" aria-label="Areas of focus">
             {education.focus.map((item) => (

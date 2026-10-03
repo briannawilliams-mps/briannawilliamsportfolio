@@ -23,7 +23,12 @@ export const about = {
       },
       { degree: 'Associate Degree, Marketing' },
     ],
-    focus: ['Strategic Communication', 'Media Relations', 'Brand Storytelling', 'Event Planning'],
+    focus: ['Public Relations Strategy', 'Media Relations', 'Press Release Writing', 'Brand Messaging'],
+    leadership: {
+      organization: 'Public Relations Student Society of America (PRSSA)',
+      role: 'Vice President',
+      period: '2019–2020',
+    },
   },
 }
 
@@ -44,9 +49,8 @@ export const experience = [
 export const caseStudy = {
   client: 'Covara Beauty',
   label: 'TikTok Content Strategy / Audience Growth',
-  image:
-    'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/4034ADD5-1B28-4330-880C-AA74DB854037-uelA5PvqXalFJ4qKU2PtlG5JySSLs7.jpg',
-  imageAlt: 'Colorful nail tools and affordable beauty products arranged in a pink organizer',
+  image: '/images/covara-workspace.png',
+  imageAlt: 'Brianna’s nail-care desk and creative workspace',
   summary:
     'Turning affordable nail-care recommendations into a discovery-first TikTok campaign for Covara Beauty.',
   sections: [
@@ -67,14 +71,18 @@ export const caseStudy = {
 }
 
 export const skills = [
-  'Public Relations',
-  'Lead Generation',
-  'Sales Support',
-  'Client Relations',
-  'Copywriting',
+  'Public Relations Strategy',
+  'Media Relations',
+  'Press Release Writing',
+  'Pitch Writing',
+  'Brand Messaging',
   'Social Media Strategy',
-  'CRM Management',
-  'Proposal Writing',
-  'Event Coordination',
-  'Market Research',
+  'Content Calendars',
+  'Audience Engagement',
+  'Lead Generation',
+  'Analytics & Reporting',
+  'Canva & Design',
+  'Microsoft Excel',
+  'Corporate Communications',
+  'Customer Service',
 ]
