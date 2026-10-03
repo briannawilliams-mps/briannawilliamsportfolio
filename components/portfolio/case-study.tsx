@@ -14,17 +14,14 @@ export function CaseStudy() {
       <SectionHeading eyebrow={caseStudy.label} title={caseStudy.client} id="case-study-title" />
       <article className="overflow-hidden rounded-3xl border border-border bg-card/90 shadow-lg shadow-mocha/10">
         <div className="grid md:grid-cols-2">
-          <div className="relative aspect-[4/3] overflow-hidden md:aspect-auto">
+          <div className="relative aspect-[4/3] overflow-hidden bg-black md:aspect-auto">
             <Image
-              src={caseStudy.image}
-              alt={caseStudy.imageAlt}
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_7064-1VLxVsQssFXsSCO6E0t2XTeZ1Z5YTD.jpg"
+              alt="Covara Beauty logo: rose-gold crowned CB monogram and Covara Beauty wordmark on a black background"
               fill
+              unoptimized
               sizes="(min-width: 768px) 50vw, 100vw"
-              className="scale-[2.2] origin-left object-cover object-[0%_58%] saturate-[1.3] contrast-[1.06] brightness-[1.04]"
-            />
-            <div
-              aria-hidden="true"
-              className="pointer-events-none absolute inset-0 bg-gradient-to-br from-[#f3bfd0]/25 via-transparent to-[#eed8aa]/20"
+              className="object-contain object-center"
             />
           </div>
           <div className="flex flex-col items-start gap-6 p-6 sm:p-10">
