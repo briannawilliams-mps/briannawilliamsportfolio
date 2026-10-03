@@ -13,16 +13,9 @@ export default function ResumePage() {
     <main className="page-gradient min-h-screen px-5 py-8 sm:px-8 sm:py-12">
       <div className="mx-auto max-w-6xl">
         <header className="mb-7 flex flex-col gap-5 border-b border-border pb-6 sm:flex-row sm:items-end sm:justify-between">
-          <div>
-            <Link
-              href="/"
-              className="inline-flex items-center gap-2 text-sm font-medium text-muted-foreground transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
-            >
-              <ArrowLeft aria-hidden="true" className="size-4" />
-              Home
-            </Link>
-            <p className="mt-5 text-xs font-semibold uppercase tracking-[0.2em] text-primary">Curriculum vitae</p>
-            <h1 className="mt-2 font-serif text-4xl sm:text-5xl">Brianna Williams</h1>
+        <div>
+          <h1 className="mt-5 font-serif text-4xl sm:text-5xl">Brianna Williams</h1>
+
             <p className="mt-2 text-sm text-muted-foreground">Marketing · Public Relations · Customer Service</p>
           </div>
           <a

@@ -24,12 +24,7 @@ export function CaseStudy() {
             />
           </div>
           <div className="flex flex-col items-start gap-6 p-6 sm:p-10">
-            <blockquote className="border-l-2 border-primary pl-4">
-              <p className="font-serif text-lg italic leading-relaxed text-foreground">
-                “The most important thing in communication is hearing what isn’t said.”
-              </p>
-              <cite className="mt-2 block text-xs font-medium not-italic text-muted-foreground">— Peter Drucker</cite>
-            </blockquote>
+
             <div>
               <p className="text-xs font-bold uppercase tracking-[0.16em] text-muted-foreground">Case study summary</p>
               <p className="mt-2 text-pretty font-serif text-xl italic leading-relaxed text-foreground">
