@@ -14,13 +14,13 @@ export function CaseStudy() {
       <SectionHeading eyebrow={caseStudy.label} title={caseStudy.client} id="case-study-title" />
       <article className="overflow-hidden rounded-3xl border border-border bg-card/90 shadow-lg shadow-mocha/10">
         <div className="grid md:grid-cols-2">
-          <div className="relative aspect-[4/3] md:aspect-auto">
+          <div className="relative aspect-[4/3] overflow-hidden md:aspect-auto">
             <Image
               src={caseStudy.image}
               alt={caseStudy.imageAlt}
               fill
               sizes="(min-width: 768px) 50vw, 100vw"
-              className="object-cover"
+              className="scale-[1.6] object-cover object-[center_58%]"
             />
           </div>
           <div className="flex flex-col items-start gap-6 p-6 sm:p-10">
