@@ -20,7 +20,11 @@ export function CaseStudy() {
               alt={caseStudy.imageAlt}
               fill
               sizes="(min-width: 768px) 50vw, 100vw"
-              className="scale-[2.6] origin-left object-cover object-[0%_58%]"
+              className="scale-[2.2] origin-left object-cover object-[0%_58%] saturate-[1.3] contrast-[1.06] brightness-[1.04]"
+            />
+            <div
+              aria-hidden="true"
+              className="pointer-events-none absolute inset-0 bg-gradient-to-br from-[#f3bfd0]/25 via-transparent to-[#eed8aa]/20"
             />
           </div>
           <div className="flex flex-col items-start gap-6 p-6 sm:p-10">
