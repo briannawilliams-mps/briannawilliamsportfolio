@@ -16,9 +16,9 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: '[Your Name] | Public Relations & Hospitality Sales',
+  title: 'Brianna Williams | Public Relations & Marketing',
   description:
-    'Personal portfolio of [Your Name] — PR graduate specializing in hospitality lead generation, sales support, and beauty brand marketing.',
+    'Brianna Williams is a public relations graduate with experience in hospitality lead generation and sales support, with marketing case studies in beauty and omnichannel retail.',
   generator: 'v0.app',
   icons: {
     icon: [
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
 
 export const viewport: Viewport = {
   colorScheme: 'light',
-  themeColor: '#faf5ef',
+  themeColor: '#1F2B1D',
 }
 
 export default function RootLayout({

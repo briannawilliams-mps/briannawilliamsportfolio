@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { OmnichannelMarketingCaseStudy } from '@/components/portfolio/omnichannel-marketing-case-study'
+import { OmnichannelCaseStudy } from '@/components/portfolio/omnichannel-case-study'
 
 export const metadata: Metadata = {
   title: 'Omnichannel Marketing Case Study | Brianna Williams',
@@ -8,5 +8,5 @@ export const metadata: Metadata = {
 }
 
 export default function OmnichannelMarketingPage() {
-  return <OmnichannelMarketingCaseStudy />
+  return <OmnichannelCaseStudy />
 }

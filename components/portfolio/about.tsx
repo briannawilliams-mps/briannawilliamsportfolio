@@ -18,9 +18,11 @@ export function About() {
             </span>
             <div>
               <h3 className="font-serif text-xl font-medium leading-tight">{education.degree}</h3>
-              <p className="text-sm text-muted-foreground">
-                {education.school} &middot; {education.year}
-              </p>
+              {(education.school || education.year) && (
+                <p className="text-sm text-muted-foreground">
+                  {[education.school, education.year].filter(Boolean).join(' · ')}
+                </p>
+              )}
             </div>
           </div>
           <ul className="mt-5 flex flex-wrap gap-2" aria-label="Areas of focus">

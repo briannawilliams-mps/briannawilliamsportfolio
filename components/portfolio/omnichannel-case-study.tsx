@@ -5,7 +5,7 @@ import {
   ArrowUpRight,
   BadgeCheck,
   Download,
-  Instagram,
+  Camera,
   MapPin,
   ScanFace,
   ShoppingBag,
@@ -33,7 +33,7 @@ const pitchUrl = '/styleme-b2b-pitch.pdf'
 
 export function OmnichannelCaseStudy() {
   return (
-    <main className="page-gradient min-h-screen">
+      <section id="omnichannel-marketing" className="page-gradient scroll-mt-8">
       <header className="mx-auto flex max-w-6xl items-center justify-between px-5 py-6 sm:px-8">
         <Link
           href="/#case-study"
@@ -166,7 +166,7 @@ export function OmnichannelCaseStudy() {
             <article className="rounded-3xl border border-[#F7F3E8]/15 bg-[#F7F3E8]/[0.06] p-7 sm:p-9">
               <div className="flex items-center justify-between gap-4">
                 <span className="rounded-full bg-[#C99F94]/15 px-3 py-1.5 text-xs font-medium text-[#E6C4B9]">Outdoors · mindful adventure</span>
-                <Instagram aria-hidden="true" className="size-5 text-[#C99F94]" />
+                <Camera aria-hidden="true" className="size-5 text-[#C99F94]" />
               </div>
               <h3 className="mt-6 font-serif text-3xl text-[#F7F3E8]">Naomi Reid</h3>
               <p className="mt-2 text-sm leading-6 text-[#F7F3E8]/75">Outdoor athlete and storyteller connecting adventure with environmental accountability.</p>
@@ -287,6 +287,6 @@ export function OmnichannelCaseStudy() {
           </Link>
         </div>
       </footer>
-    </main>
+      </section>
   )
 }

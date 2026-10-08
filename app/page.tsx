@@ -2,6 +2,7 @@ import { Hero } from '@/components/portfolio/hero'
 import { About } from '@/components/portfolio/about'
 import { Experience } from '@/components/portfolio/experience'
 import { CaseStudy } from '@/components/portfolio/case-study'
+import { OmnichannelCaseStudy } from '@/components/portfolio/omnichannel-case-study'
 import { Skills } from '@/components/portfolio/skills'
 import { Contact } from '@/components/portfolio/contact'
 
@@ -13,6 +14,7 @@ export default function Page() {
         <About />
         <Experience />
         <CaseStudy />
+        <OmnichannelCaseStudy />
         <Skills />
         <Contact />
       </div>

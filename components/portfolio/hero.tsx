@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import { Mail, MapPin } from 'lucide-react'
 import { profile } from '@/lib/portfolio'
 
 export function Hero() {
@@ -37,23 +36,21 @@ export function Hero() {
           </p>
           <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
             <a
-              href={`mailto:${profile.email}`}
+              href="#case-study"
               className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-medium text-primary-foreground transition-colors hover:bg-espresso"
             >
-              <Mail className="size-4" aria-hidden="true" />
-              Get in touch
+              View Covara case study
             </a>
             <a
-              href="#case-study"
+              href="#omnichannel-marketing"
               className="inline-flex items-center gap-2 rounded-full border border-primary/30 px-6 py-3 text-sm font-medium text-primary transition-colors hover:bg-secondary"
             >
-              View case study
+              View omnichannel work
             </a>
           </div>
-          <p className="mt-6 inline-flex items-center gap-1.5 text-sm text-muted-foreground">
-            <MapPin className="size-4" aria-hidden="true" />
-            {profile.location}
-          </p>
+          {profile.location && (
+            <p className="mt-6 text-sm text-muted-foreground">{profile.location}</p>
+          )}
         </div>
       </div>
     </header>

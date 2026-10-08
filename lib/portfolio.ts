@@ -1,13 +1,13 @@
 export const profile = {
-  name: '[Your Name]',
-  initials: 'YN',
-  title: 'Public Relations & Hospitality Sales',
+  name: 'Brianna Williams',
+  initials: 'BW',
+  title: 'Public Relations · Hospitality Sales Support',
   tagline:
-    'I connect brands with the people they’re meant to serve — through thoughtful storytelling, strategic outreach, and relationships built to last.',
-  location: 'Your City, State',
-  email: 'hello@yourname.com',
-  phone: '(555) 123-4567',
-  linkedin: 'https://www.linkedin.com/in/yourname',
+    'I bring a storyteller’s perspective to hospitality sales, brand strategy, and customer experiences.',
+  location: '',
+  email: '',
+  phone: '',
+  linkedin: '',
   headerImage: '/images/header.png',
   headerImageAlt:
     'Warm-toned flat lay of a linen notebook, gold pen, and coffee on a beige surface',
@@ -17,24 +17,17 @@ export const about = {
   intro:
     'With a Bachelor’s degree in Public Relations and hands-on experience in hospitality sales, I bring a communicator’s eye to every stage of the client journey — from the first outreach email to the final signed proposal.',
   education: {
-    degree: 'Bachelor of Arts, Public Relations',
-    school: 'Your University',
-    year: '20XX',
+    degree: 'Bachelor’s Degree in Public Relations',
+    school: '',
+    year: '',
     focus: ['Strategic Communication', 'Media Relations', 'Brand Storytelling', 'Event Planning'],
   },
 }
 
 export const experience = [
   {
-    role: 'Lead Generation & Sales Support',
-    company: 'Hospitality Group',
-    period: '20XX — Present',
-    points: [
-      'Research and qualify prospective corporate, group, and event clients to build a consistent sales pipeline.',
-      'Craft personalized outreach campaigns and follow-up sequences that turn cold leads into booked site visits.',
-      'Prepare proposals, rate sheets, and client-facing materials in partnership with the sales team.',
-      'Maintain CRM accuracy and reporting so leadership has a clear view of pipeline health.',
-    ],
+    role: 'Hospitality Lead Generation & Sales Support',
+    summary: 'Experience focused on hospitality lead generation and supporting the sales process.',
   },
 ]
 
@@ -64,13 +57,11 @@ export const caseStudy = {
 
 export const skills = [
   'Public Relations',
-  'Lead Generation',
+  'Hospitality Lead Generation',
   'Sales Support',
-  'Client Relations',
-  'Copywriting',
-  'Social Media Strategy',
-  'CRM Management',
-  'Proposal Writing',
-  'Event Coordination',
-  'Market Research',
+  'Brand Strategy',
+  'Ambassador Marketing',
+  'Omnichannel Marketing',
+  'B2B Retail Pitching',
+  'Customer Experience',
 ]

@@ -3,12 +3,20 @@ import { profile } from '@/lib/portfolio'
 import { SectionHeading } from './section-heading'
 
 const links = [
-  { label: 'Email', value: profile.email, href: `mailto:${profile.email}`, icon: Mail },
-  { label: 'Phone', value: profile.phone, href: `tel:${profile.phone.replace(/[^\d+]/g, '')}`, icon: Phone },
-  { label: 'LinkedIn', value: 'Connect with me', href: profile.linkedin, icon: ArrowUpRight, external: true },
+  ...(profile.email
+    ? [{ label: 'Email', value: profile.email, href: `mailto:${profile.email}`, icon: Mail }]
+    : []),
+  ...(profile.phone
+    ? [{ label: 'Phone', value: profile.phone, href: `tel:${profile.phone.replace(/[^\d+]/g, '')}`, icon: Phone }]
+    : []),
+  ...(profile.linkedin
+    ? [{ label: 'LinkedIn', value: 'Connect with me', href: profile.linkedin, icon: ArrowUpRight, external: true }]
+    : []),
 ]
 
 export function Contact() {
+  if (links.length === 0) return null
+
   return (
     <section aria-labelledby="contact-title" className="mx-auto max-w-4xl px-5 pb-16">
       <SectionHeading eyebrow="Contact" title="Let’s work together" id="contact-title" light />

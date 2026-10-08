@@ -55,7 +55,7 @@ export function CaseStudy() {
       </article>
       <div className="mt-6 text-center">
         <a
-          href="/case-studies/omnichannel-marketing"
+          href="#omnichannel-marketing"
           className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-card/80 px-6 py-3 text-sm font-medium text-primary transition-colors hover:bg-secondary"
         >
           Explore my omnichannel marketing case study <span aria-hidden="true">→</span>
