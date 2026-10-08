@@ -13,6 +13,7 @@ export function Hero() {
           <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-[0.62rem] font-semibold uppercase tracking-[0.14em] sm:gap-x-6 sm:text-xs">
             <a href="#about" className="transition-colors hover:text-[#e4b8a8]">About</a>
             <a href="#case-study" className="transition-colors hover:text-[#e4b8a8]">Case Study</a>
+            <a href="#forage" className="transition-colors hover:text-[#e4b8a8]">Simulation</a>
             <a href="#skills" className="transition-colors hover:text-[#e4b8a8]">What I Bring</a>
             <a href="#contact" className="transition-colors hover:text-[#e4b8a8]">Contact</a>
             <a href={profile.linkedin} target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-[#e4b8a8]">LinkedIn</a>

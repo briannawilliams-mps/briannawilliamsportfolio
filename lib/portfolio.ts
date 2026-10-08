@@ -70,6 +70,111 @@ export const caseStudy = {
   deliverables: ['TikTok Content Strategy', 'Educational Carousel', 'Audience Growth', 'Performance Analysis'],
 }
 
+export const forageCaseStudy = {
+  program: 'Forage Job Simulation',
+  label: 'Ambassador Strategy / B2B Retail Innovation',
+  client: 'Omnichannel Marketing',
+  image: '/images/ambassador-slide-1.jpg',
+  imageAlt: 'Title slide of the Brand Strategy & Ambassador Overview deck on a dark navy background',
+  summary:
+    'A Forage job simulation exploring ambassador marketing strategy, a B2B augmented-reality retail pitch, and omnichannel brand thinking.',
+  completionDate: 'October 2026',
+  mission: 'Empowering individuals to lead balanced, mindful, and physically rewarding lives.',
+  pillars: [
+    {
+      title: 'Inclusivity',
+      body: 'Welcoming all backgrounds, bodies, and levels of sport or fitness.',
+    },
+    {
+      title: 'Mental & Physical Well-Being',
+      body: 'Promoting real progress over perfection, addressing mental health directly alongside physical training.',
+    },
+    {
+      title: 'Community Leadership',
+      body: 'Acting locally to inspire equity in youth sports and sustainable lifestyle practices globally.',
+    },
+  ],
+  ambassadors: [
+    {
+      name: 'Jordan Ellis',
+      role: 'Former collegiate athlete · Track coach & creator',
+      audience: '~28,000 followers',
+      audienceDetail: 'Instagram + TikTok combined',
+      ageRange: 'Primary audience ages 18–35',
+      details:
+        'Mix of student athletes and young professionals. Content style: short-form videos from track practice, day-in-the-life training, voiceovers, and motivational reflections.',
+      alignment:
+        'Advocates openly for mental health in athletics, equity in youth sports, and expanding modern masculinity in wellness.',
+      contentIdea: {
+        title: '“Progress Over Perfection”',
+        body: 'A multi-part video series featuring a raw look into managing burnout, balancing self-care with intense athletic milestones, and community track youth clinics.',
+      },
+    },
+    {
+      name: 'Naomi Reid',
+      role: 'Outdoor athlete & creator',
+      audience: '~60,000 followers',
+      audienceDetail: 'Primarily YouTube + Instagram',
+      ageRange: 'Primary audience ages 28–45',
+      details:
+        'Bridges the gap between extreme outdoor athletic pursuits and environmental accountability. Content style: immersive long-form YouTube narratives and first-person POV footage.',
+      alignment: 'Environmental accountability and sustainable, zero-waste outdoor practices.',
+      contentIdea: {
+        title: '“Leave No Trace Trail Run”',
+        body: 'A YouTube vlog series highlighting eco-conscious gear selections, zero-waste adventure prep, and curated mountain courses that educate runners on environmental respect.',
+      },
+    },
+  ],
+  slides: [
+    {
+      src: '/images/ambassador-slide-1.jpg',
+      alt: 'Deck slide listing the brand strategy framework — mission and three pillars — followed by the Jordan Ellis ambassador profile with audience and content details',
+      caption: 'Brand strategy framework and the first ambassador profile, Jordan Ellis.',
+    },
+    {
+      src: '/images/ambassador-slide-2.jpg',
+      alt: 'Deck slide listing the ambassador summary matrix, content style and engagement formats, and the specific campaign concepts for Jordan Ellis and Naomi Reid',
+      caption: 'Audience summary matrix, content formats, and campaign concepts for both ambassadors.',
+    },
+  ],
+  styleMe: {
+    name: 'STYLEME',
+    tagline: 'Your style, instantly.',
+    summary:
+      'A B2B pitch for an in-store augmented reality experience that helps customers discover, virtually try on, and order products that are out of stock, unavailable in their size, or online-only — turning a frustrating "we don\u2019t have it" moment into a sale.',
+    howItWorks: [
+      'Select — the customer chooses items with a sales associate using a connected handheld device.',
+      'Scan & try on — an AR mirror creates a 3D scan and displays the selected items on the customer.',
+      'Yes or no — the customer marks each item as a favorite or a pass.',
+      'Notify — the customer pings the associate from the mirror once they\u2019re finished, privately.',
+      'Consult & order — the associate reviews favorites, sizes, and colors with the customer.',
+      'Choose delivery — the order ships home or is held for in-store pickup.',
+    ],
+    valueToBusiness: [
+      'Recovers sales lost to out-of-stock or online-only items',
+      'Positions the brand as inclusive and technology-forward',
+      'Gives associates faster, handheld tools to locate and order product',
+      'Surfaces customer preference data through the yes/no selections',
+    ],
+    file: '/documents/styleme-pitch.pdf',
+  },
+  certificate: {
+    title: 'Omnichannel Marketing Job Simulation',
+    subtitle: 'Certificate of Completion',
+    issuer: 'Forage',
+    signer: 'Tom Brunskill, Co-Founder of Forage',
+    date: 'October 8, 2026',
+    tasks: [
+      'Developing an integrated marketing plan',
+      'Digital transformation of the retail guest experience',
+      'Pitching a local ambassador strategy',
+      'Data analysis',
+    ],
+    file: '/documents/forage-certificate.pdf',
+  },
+  deliverables: ['Ambassador Strategy', 'B2B AR Pitch', 'Omnichannel Marketing', 'Forage Simulation'],
+}
+
 export const skills = [
   'Public Relations Strategy',
   'Media Relations',
